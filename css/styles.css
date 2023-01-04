@@ -163,6 +163,11 @@ ul {
     margin-right: auto;
 }
 
+/* .header-menu-hamburger {
+    width: 32px;
+    height: 22px;
+} */
+
 .site-nav .item .current {
     color: var(--primary-brand);
 }
@@ -338,7 +343,7 @@ ul {
     background-color: var(--light);
 }
 
-.advntage-text {
+.advantage-text {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
@@ -1075,4 +1080,144 @@ textarea {
 .modal-btn_send:hover,
 .modal-btn_send:focus {
     background: var(--pressed-state);
+}
+
+
+@media screen and (max-width: 428px) {
+    .site-nav,
+    .contacts,
+    .example {
+        display: none;
+    }
+
+    .navigation-pages,
+    .logo-header {
+        margin-right: 0;
+    }
+
+    .header-section,
+    .container-secrion_hero,
+    .container-advantage,
+    .container-section_team,
+    .container-section_customers {
+        width: 396px;
+        padding: 0 16px;
+    }
+
+    .hero {
+        background-color: var(--dark);
+        width: 428px;
+        background-image: linear-gradient(
+        to right,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+    ), 
+        url(../people_office-mobile-1x.jpg);
+    }
+
+    .hero-title {
+        width: 320px;
+        height: 80px;
+        margin-bottom: 72px;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.11;
+    }
+
+    .button.primary {
+        line-height: 1.5;
+    }
+
+    .advantage-icon {
+        display: none;
+    }
+
+    .advantage-list,
+    .advantage-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .advantage-title {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.11;
+    }
+
+    .advntage-text {
+        font-weight: 500;
+    }
+
+    .team-title {
+        font-weight: 700;
+    }
+
+    .team-section-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team-section-item {
+        width: 260px;
+    }
+
+    .team-name {
+        font-weight: 500;
+    }
+
+    .team-text {
+        font-weight: 400;
+    }
+
+    .customers-list {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .customers-item {
+        flex-basis: calc((100% - 24px) / 2);
+    }
+
+    .container-logo_footer {
+        width: 428px;
+        padding: 0 16px;
+        flex-direction: column;
+    }
+
+    .footer-logo_text,
+    .footer-social_media {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto 72px;
+    }
+
+    .footer-subscribe {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 396px;
+        margin: 0 auto;
+    }
+
+    .footer-subtitle {
+        width: 96px;
+        text-align: center;
+    }
+
+    .form-subscribe {
+        flex-direction: column;
+        align-items: center;
+        width: 396px;
+    }
+
+    .footer-form_mail {
+        margin: 0 auto 16px;
+    }
+
+    .footer_input_email {
+        width: 396px;
+    }
 }
