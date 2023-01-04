@@ -163,11 +163,6 @@ ul {
     margin-right: auto;
 }
 
-/* .header-menu-hamburger {
-    width: 32px;
-    height: 22px;
-} */
-
 .site-nav .item .current {
     color: var(--primary-brand);
 }
@@ -1100,7 +1095,7 @@ textarea {
     .container-advantage,
     .container-section_team,
     .container-section_customers {
-        width: 396px;
+        width: 428px;
         padding: 0 16px;
     }
 
@@ -1112,7 +1107,7 @@ textarea {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
     ), 
-        url(../people_office-mobile-1x.jpg);
+        url(../images/people_office-mobile-1x.jpg);
     }
 
     .hero-title {
