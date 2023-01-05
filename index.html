@@ -1,27 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>goit-markup-hw-07</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./css/modern-normalie.css" />
-    <link rel="stylesheet" href="./css/styles.css" />
+      rel="stylesheet">
+    <link rel="stylesheet" href="./css/modern-normalie.css">
+    <link rel="stylesheet" href="./css/styles.css">
   </head>
   <body>
     <!-- Logo Navigation Contacts -->
     <header class="header">
       <div class="header-section">
         <nav class="navigation-pages">
-          <a href="./index.html" class="logo logo-header"
+          <a href="#" class="logo logo-header"
             >web<span class="logo-studio">studio</span>
           </a>
+
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu">
+          <svg width="32" height="22">
+            <use class="icon-menu" href="./images/icons.svg#icon-menu-hamburger"></use>
+          </svg>
+        </button>
 
           <ul class="site-nav list">
             <li class="item">
@@ -36,9 +44,7 @@
 
         <ul class="contacts list">
           <li class="item">
-            <a href="mailto:info@devstudio.com" class="link"
-              >info@devstudio.com</a
-            >
+            <a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a>
           </li>
           <li class="item">
             <a href="tel:+11(000)111-11-11" class="link">+11 (000) 111-11-11</a>
@@ -550,6 +556,63 @@
         </form>
       </div>
     </div>
+
+    <!-- Mobile menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="btn-modal_close menu-toggle js-close-menu">
+        <svg class="svg-modal_close">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu">
+        <li><a href="#" class="link">studio</a></li>
+        <li><a href="./portfolio.html" class="link">portfolio</a></li>
+        <li><a href="#" class="link">contacts</a></li>
+      </ul>
+
+      <ul class="mobile-contacts">
+        <li class="mobile-contacts_item">
+          <a class="mobile-contacts_tel" href="tel:+11(000)111-11-11" class="link">+11 (000) 111-11-11</a>
+        </li>
+        <li>
+          <a class="mobile-contacts_mail" href="mailto:info@devstudio.com" class="link">info@devstudio.com</a>
+        </li>
+      </ul>
+
+      <ul class="team-social_list">
+        <li class="team-social_item">
+          <a href="#" class="team-social_link">
+            <svg class="svg-mobile_contacts">
+              <use href="./images/icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="team-social_item">
+          <a href="#" class="team-social_link">
+            <svg class="svg-mobile_contacts">
+              <use href="./images/icons.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="team-social_item">
+          <a href="#" class="team-social_link">
+            <svg class="svg-mobile_contacts">
+              <use href="./images/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="team-social_item">
+          <a href="#" class="team-social_link">
+            <svg class="svg-mobile_contacts">
+              <use href="./images/icons.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
