@@ -341,7 +341,7 @@ ul {
 
 .advantage-list {
     display: flex;
-    gap: 24px;
+    gap: 72px;
 }
 
 .advantage-item {
