@@ -1169,6 +1169,7 @@ textarea {
     .team-section-list {
         flex-direction: column;
         align-items: center;
+        gap: 72px;
     }
 
     .team-section-item {
@@ -1276,10 +1277,19 @@ textarea {
         letter-spacing: 0.04em;
     }
 
+    .container-advantage {
+        padding: 0 16px;
+    }
+
+    .container-secrion_hero {
+        padding: 0 16px;
+    }
+
     .advantage-list {
         flex-wrap: wrap;
         justify-content: center;
         row-gap: 72px;
+        column-gap: 24px;
     }
 
     .advantage-item {
@@ -1296,10 +1306,17 @@ textarea {
         font-weight: 500;
     }
 
+    .container-section_team {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     .team-section-list {
         justify-content: center;
         flex-wrap: wrap;
         row-gap: 64px;
+        width: 768px;
     }
     
     .customers-list {
@@ -1314,14 +1331,21 @@ textarea {
 
     .container-logo_footer {
         flex-wrap: wrap;
+        max-width: 768px;
+        padding: 0 16px;
     }
 
     .footer-logo_text {
         margin: 0 24px 72px 0;
+        padding-left: 92px;
     }
 
     .footer-social_media {
         margin-right: 0;
+    }
+
+    .footer-subscribe {
+        padding-left: 92px;
     }
 }
 
