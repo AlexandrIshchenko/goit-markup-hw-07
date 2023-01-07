@@ -47,6 +47,12 @@ ul {
     padding: 0;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 /* Button for Index,Portfolio HTML*/
 
 .filter-btn {
@@ -164,12 +170,8 @@ ul {
 }
 
 .menu-toggle {
-    position: absolute;
-    top: 24px;
-    right: 24px;
+    display: inline-flex;
 
-    margin: 0;
-    padding: 0;
     background-color: transparent;
     cursor: pointer;
     border: none;
@@ -1102,9 +1104,8 @@ textarea {
         display: none;
     }
 
-    .navigation-pages,
     .logo-header {
-        margin-right: 0;
+        margin-right: 248px;
     }
 
     .header-section,
@@ -1116,7 +1117,7 @@ textarea {
         padding: 0 16px;
     }
 
-    .hero {
+    /* .hero {
         background-color: var(--dark);
         max-width: 428px;
         background-image: linear-gradient(
@@ -1125,7 +1126,7 @@ textarea {
         rgba(46, 47, 66, 0.7)
     ), 
         url(../images/people_office-mobile-1x.jpg);
-    }
+    } */
 
     .hero-title {
         max-width: 320px;
@@ -1236,6 +1237,30 @@ textarea {
         width: 100%;
         max-width: 396px;
     }
+
+    /* .hero {
+        width: 428px;
+        height: 432px;
+        background-image: linear-gradient(
+        to right,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+    ), url('../images/people_office-mobile-1x.jpg');
+        background-size: 428px 432px;
+}
+
+@media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+    .hero {
+        background-image: linear-gradient(
+        to right,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+    ), url('../images/people_office-mobile-@2x.jpg');
+        }
+    }  */
 }
 
 /* Tablet */
@@ -1278,6 +1303,8 @@ textarea {
     }
 
     .container-advantage {
+        display: flex;
+        justify-content: center;
         padding: 0 16px;
     }
 
@@ -1290,6 +1317,7 @@ textarea {
         justify-content: center;
         row-gap: 72px;
         column-gap: 24px;
+        width: 736px;
     }
 
     .advantage-item {
@@ -1318,11 +1346,18 @@ textarea {
         row-gap: 64px;
         width: 768px;
     }
+
+    .container-section_customers {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
     
     .customers-list {
         justify-content: center;
         flex-wrap: wrap;
         row-gap: 72px;
+        width: 552px;
     }
 
     .customers-item {
@@ -1372,12 +1407,6 @@ textarea {
 
 .menu-container.is-open {
     transform: translateX(0);
-}
-
-.menu-container .menu-toggle {
-    position: absolute;
-    top: 40px;
-    right: 40px;
 }
 
 .mobile-menu {
@@ -1430,3 +1459,6 @@ color: var(--text);
     width: 24px;
     height: 24px;
 }
+
+
+
