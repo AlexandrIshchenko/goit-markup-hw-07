@@ -1113,6 +1113,16 @@ textarea {
         padding: 0 16px;
     }
 
+    .hero {
+        position: relative;
+    }
+
+    .container-secrion_hero {
+        position: relative;
+        top: 100%;
+        transform: translateY(-50%);
+    }
+
     /* .hero {
         background-color: var(--dark);
         max-width: 428px;
@@ -1265,6 +1275,16 @@ textarea {
     .example,
     .advantage-icon {
         display: none;
+    }
+
+    .hero {
+        position: relative;
+    }
+
+    .container-secrion_hero {
+        position: relative;
+        top: 100%;
+        transform: translateY(-50%);
     }
 
     .header-section {
