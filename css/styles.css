@@ -652,7 +652,7 @@ img {
 }
 
 .footer_input_email {
-    max-width: 264px;
+    width: 264px;
     height: 40px;
     padding-left: 16px;
 
@@ -1212,9 +1212,9 @@ textarea {
 
     .footer-subscribe {
         display: flex;
-        justify-content: center;
+        flex-direction: column;
         align-items: center;
-        max-width: 428px;
+        max-width: 100%;
         margin: 0 auto;
     }
 
@@ -1234,11 +1234,10 @@ textarea {
     }
 
     .footer_input_email {
-        width: 100%;
-        max-width: 396px;
+        width: 396px;
     }
 
-    /* .hero {
+    .hero {
         width: 428px;
         height: 432px;
         background-image: linear-gradient(
@@ -1247,12 +1246,12 @@ textarea {
         rgba(46, 47, 66, 0.7)
     ), url('../images/people_office-mobile-1x.jpg');
         background-size: 428px 432px;
-}
+    }
 
-@media (min-device-pixel-ratio: 2),
+@media screen and (min-device-pixel-ratio: 2),
         (-webkit-min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
     .hero {
         background-image: linear-gradient(
         to right,
@@ -1260,7 +1259,7 @@ textarea {
         rgba(46, 47, 66, 0.7)
     ), url('../images/people_office-mobile-@2x.jpg');
         }
-    }  */
+    } 
 }
 
 /* Tablet */
@@ -1382,6 +1381,30 @@ textarea {
     .footer-subscribe {
         padding-left: 92px;
     }
+
+    .hero {
+        width: 768px;
+        height: 436px;
+        background-image: linear-gradient(
+        to right,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+    ), url('../images/people_office-tablet-1x.jpg');
+        background-size: 768px 436px;
+    }
+
+@media screen and (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .hero {
+        background-image: linear-gradient(
+        to right,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+    ), url('../images/people_office-tablet-@2x.jpg');
+        }
+    } 
 }
 
 /* Desktop */
