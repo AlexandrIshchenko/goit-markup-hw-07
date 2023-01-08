@@ -433,10 +433,6 @@ img {
     background: var(--white);
 }
 
-.team-section-image {
-    display: block;
-}
-
 .team-name {
     font-weight: 600;
     font-size: 20px;
