@@ -180,7 +180,7 @@ img {
 }
 
 .site-nav .item .current {
-    color: var(--primary-brand);
+    color: var(--pressed-state);
 }
 
 .current::after {
@@ -1243,6 +1243,11 @@ textarea {
         width: 396px;
     }
 
+    .current::after {
+        content: "";
+        width: 0;
+    }
+
     .hero {
         width: 428px;
         height: 432px;
@@ -1428,6 +1433,30 @@ textarea {
     .menu-toggle {
         display: none;
     }
+
+    .hero {
+        width: 1440px;
+        height: 600px;
+        background-image: linear-gradient(
+        to right,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+    ), url('../images/people_office-desktop-1x.jpg');
+        background-size: 1440px 600px;
+    }
+
+@media screen and (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .hero {
+        background-image: linear-gradient(
+        to right,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+    ), url('../images/people_office-desktop-@2x.jpg');
+        }
+    } 
 }
 
 .menu-container {
@@ -1463,6 +1492,10 @@ textarea {
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-transform: capitalize;
+}
+
+.mobile-menu .current {
+    color: var(--pressed-state);
 }
 
 .mobile-contacts {
