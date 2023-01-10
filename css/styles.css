@@ -1094,6 +1094,20 @@ textarea {
 }
 
 /* Mobile */
+@media screen and (max-width:427px) {
+    .mobile-contacts_item .mobile-contacts_tel {
+        font-size: 24px;
+    }
+
+    .menu-container .container-mobile_contact .team-social_list {
+        gap: 26px;
+    }
+
+    .checkbox-consent {
+        font-size: 9px;
+    }
+}
+
 @media screen and (max-width: 767px) {
     .site-nav,
     .contacts,
@@ -1102,7 +1116,7 @@ textarea {
     }
 
     .logo-header {
-        margin-right: 248px;
+        margin-right: 142px;
     }
 
     .header-section,
@@ -1110,7 +1124,7 @@ textarea {
     .container-advantage,
     .container-section_team,
     .container-section_customers {
-        max-width: 428px;
+        max-width: 320px;
         padding: 0 16px;
     }
 
@@ -1205,7 +1219,7 @@ textarea {
     }
 
     .container-logo_footer {
-        max-width: 428px;
+        max-width: 320px;
         padding: 0 16px;
         flex-direction: column;
     }
@@ -1234,7 +1248,7 @@ textarea {
     .form-subscribe {
         flex-direction: column;
         align-items: center;
-        max-width: 428px;
+        max-width: 320px;
     }
 
     .footer-form_mail {
@@ -1242,7 +1256,7 @@ textarea {
     }
 
     .footer_input_email {
-        width: 396px;
+        width: 288px;
     }
 
     .current::after {
@@ -1250,8 +1264,17 @@ textarea {
         width: 0;
     }
 
+    .modal {
+        max-width: 320px;
+    }
+
+    .modal-input,
+    .modal-comment {
+        width: 272px;
+    }
+
     .hero {
-        width: 428px;
+        width: 320px;
         height: 432px;
         background-image: linear-gradient(
         to right,
